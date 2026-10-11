@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Buddies - Animals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">🐾 Animal Buddies</div>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <nav id="navLinks">
+        <a href="animalbuddies.html">Home</a>
+        <a href="animalbuddies-about.html">About Us</a>
+        <a class="active" href="animalbuddies-animals.html">Animals</a>
+        <a href="animalbuddies-habitats.html">Habitats</a>
+        <a href="animalbuddies-quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main class="page">
+    <section class="page-title blue">
+        <div>
+            <p class="tag">🔎 LEARNING MATERIAL 1</p>
+            <h1>Meet the Animals 🐾</h1>
+            <p>Click an animal to learn a simple fact about it.</p>
+        </div>
+        <div class="big-emoji">🦜</div>
+    </section>
+
+    <section class="animal-grid">
+        <button class="animal-card pink" onclick="showAnimal('dog')"><span>🐶</span><strong>Dog</strong><small>Land</small></button>
+        <button class="animal-card yellow" onclick="showAnimal('cat')"><span>🐱</span><strong>Cat</strong><small>Land</small></button>
+        <button class="animal-card orange" onclick="showAnimal('lion')"><span>🦁</span><strong>Lion</strong><small>Land</small></button>
+        <button class="animal-card green" onclick="showAnimal('elephant')"><span>🐘</span><strong>Elephant</strong><small>Land</small></button>
+        <button class="animal-card purple" onclick="showAnimal('monkey')"><span>🐒</span><strong>Monkey</strong><small>Land</small></button>
+        <button class="animal-card blue" onclick="showAnimal('fish')"><span>🐟</span><strong>Fish</strong><small>Water</small></button>
+        <button class="animal-card teal" onclick="showAnimal('dolphin')"><span>🐬</span><strong>Dolphin</strong><small>Water</small></button>
+        <button class="animal-card pink" onclick="showAnimal('parrot')"><span>🦜</span><strong>Parrot</strong><small>Air</small></button>
+    </section>
+
+    <section id="animalInfo" class="info-box">
+        <h2>👆 Choose an animal</h2>
+        <p>Click one of the animals above to see its information.</p>
+    </section>
+
+    <div class="next-box">
+        <a class="big-button blue-button" href="animalbuddies-habitats.html">Next: Animal Habitats 🌍</a>
+    </div>
+<div class="sound-area"><button class="sound-button" onclick="playSound('welcome')">🔊 Play Sound</button></div></main>
+
+<footer><p>🐾 Animal Buddies | Explore the animal world! 🌎</p></footer>
+<script src="animalbuddies.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Buddies - Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">🐾 Animal Buddies</div>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <nav id="navLinks">
+        <a href="animalbuddies.html">Home</a>
+        <a href="animalbuddies-about.html">About Us</a>
+        <a href="animalbuddies-animals.html">Animals</a>
+        <a href="animalbuddies-habitats.html">Habitats</a>
+        <a class="active" href="animalbuddies-quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main class="page">
+    <section class="page-title purple">
+        <div>
+            <p class="tag">🎯 ONLINE QUIZ</p>
+            <h1>Animal Buddies Quiz</h1>
+            <p>Choose one answer for every question. Good luck! 🌟</p>
+        </div>
+        <div class="big-emoji">🏆</div>
+    </section>
+
+    <form id="quizForm" class="quiz-form">
+        <div class="question"><h3>1. Which animal says “meow”?</h3>
+            <label><input type="radio" name="Q1" id="Q1true" value="true"> 🐱 Cat</label>
+            <label><input type="radio" name="Q1" id="Q1false" value="false"> 🦁 Lion</label>
+        </div>
+        <div class="question"><h3>2. Which animal lives in water?</h3>
+            <label><input type="radio" name="Q2" id="Q2true" value="true"> 🐬 Dolphin</label>
+            <label><input type="radio" name="Q2" id="Q2false" value="false"> 🐘 Elephant</label>
+        </div>
+        <div class="question"><h3>3. Which animal can fly?</h3>
+            <label><input type="radio" name="Q3" id="Q3true" value="true"> 🦜 Parrot</label>
+            <label><input type="radio" name="Q3" id="Q3false" value="false"> 🐟 Fish</label>
+        </div>
+        <div class="question"><h3>4. Which animal has a long trunk?</h3>
+            <label><input type="radio" name="Q4" id="Q4true" value="true"> 🐘 Elephant</label>
+            <label><input type="radio" name="Q4" id="Q4false" value="false"> 🐱 Cat</label>
+        </div>
+        <div class="question"><h3>5. Where does a lion live?</h3>
+            <label><input type="radio" name="Q5" id="Q5true" value="true"> 🌳 Land</label>
+            <label><input type="radio" name="Q5" id="Q5false" value="false"> 🌊 Water</label>
+        </div>
+        <div class="question"><h3>6. Which animal is a sea animal?</h3>
+            <label><input type="radio" name="Q6" id="Q6true" value="true"> 🐬 Dolphin</label>
+            <label><input type="radio" name="Q6" id="Q6false" value="false"> 🐒 Monkey</label>
+        </div>
+        <div class="question"><h3>7. Which animal is commonly kept as a pet?</h3>
+            <label><input type="radio" name="Q7" id="Q7true" value="true"> 🐶 Dog</label>
+            <label><input type="radio" name="Q7" id="Q7false" value="false"> 🦁 Lion</label>
+        </div>
+        <div class="question"><h3>8. Which animal can climb trees?</h3>
+            <label><input type="radio" name="Q8" id="Q8true" value="true"> 🐒 Monkey</label>
+            <label><input type="radio" name="Q8" id="Q8false" value="false"> 🐟 Fish</label>
+        </div>
+        <div class="question"><h3>9. Which animal has fins?</h3>
+            <label><input type="radio" name="Q9" id="Q9true" value="true"> 🐟 Fish</label>
+            <label><input type="radio" name="Q9" id="Q9false" value="false"> 🐘 Elephant</label>
+        </div>
+        <div class="question"><h3>10. What is the home of an animal called?</h3>
+            <label><input type="radio" name="Q10" id="Q10true" value="true"> 🏡 Habitat</label>
+            <label><input type="radio" name="Q10" id="Q10false" value="false"> 🍎 Food</label>
+        </div>
+
+        <div class="quiz-buttons">
+            <button type="button" id="checkButton" class="big-button green-button" onclick="CheckAnswer()">Check Answer ✅</button>
+            <button type="button" class="big-button orange-button" onclick="TakeQuizAgain()">Take Quiz Again 🔄</button>
+        </div>
+    </form>
+
+    <section id="quizResult" class="quiz-result">
+        <h2 id="scoreText"></h2>
+        <div class="progress"><div id="progressBar"></div></div>
+        <p id="feedbackText"></p>
+    </section>
+<div class="sound-area"><button class="sound-button" onclick="playSound('welcome')">🔊 Play Sound</button></div></main>
+
+<footer><p>🐾 Animal Buddies | You can do it! 💪</p></footer>
+<script src="animalbuddies.js"></script>
+</body>
+</html>

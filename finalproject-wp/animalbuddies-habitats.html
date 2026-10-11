@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Buddies - Habitats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">🐾 Animal Buddies</div>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <nav id="navLinks">
+        <a href="animalbuddies.html">Home</a>
+        <a href="animalbuddies-about.html">About Us</a>
+        <a href="animalbuddies-animals.html">Animals</a>
+        <a class="active" href="animalbuddies-habitats.html">Habitats</a>
+        <a href="animalbuddies-quiz.html">Quiz</a>
+    </nav>
+</header>
+
+<main class="page">
+    <section class="page-title green">
+        <div>
+            <p class="tag">🔎 LEARNING MATERIAL 2</p>
+            <h1>Where Do Animals Live? 🌍</h1>
+            <p>Animals live in different places called habitats.</p>
+        </div>
+        <div class="big-emoji">🌳</div>
+    </section>
+
+    <section class="card-grid three">
+        <article class="habitat-card land">
+            <div class="icon">🌳🦁</div>
+            <h2>Land</h2>
+            <p>Land animals live on the ground or in trees.</p>
+            <p><strong>Examples:</strong> Lion, elephant, dog, monkey.</p>
+        </article>
+        <article class="habitat-card water">
+            <div class="icon">🌊🐬</div>
+            <h2>Water</h2>
+            <p>Water animals live in rivers, lakes or the sea.</p>
+            <p><strong>Examples:</strong> Fish and dolphin.</p>
+        </article>
+        <article class="habitat-card air">
+            <div class="icon">☁️🦜</div>
+            <h2>Air</h2>
+            <p>Flying animals move through the air.</p>
+            <p><strong>Examples:</strong> Parrot, eagle and butterfly.</p>
+        </article>
+    </section>
+
+    <section class="challenge">
+        <h2>🎯 Quick Habitat Challenge</h2>
+        <p>Where does a dolphin live?</p>
+        <div class="choice-buttons">
+            <button onclick="checkHabitat('land')">🌳 Land</button>
+            <button onclick="checkHabitat('water')">🌊 Water</button>
+            <button onclick="checkHabitat('air')">☁️ Air</button>
+        </div>
+        <div id="habitatResult" class="message"></div>
+    </section>
+
+    <div class="next-box">
+        <a class="big-button purple-button" href="animalbuddies-quiz.html">Ready for the Quiz? 🎯</a>
+    </div>
+<div class="sound-area"><button class="sound-button" onclick="playSound('welcome')">🔊 Play Sound</button></div></main>
+
+<footer><p>🐾 Animal Buddies | Every animal has a home! 🏡</p></footer>
+<script src="animalbuddies.js"></script>
+</body>
+</html>

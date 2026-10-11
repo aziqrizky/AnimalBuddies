@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Buddies - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">🐾 Animal Buddies</div>
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+    <nav id="navLinks">
+        <a href="animalbuddies.html">Home</a>
+        <a class="active" href="animalbuddies-about.html">About Us</a>
+        <a href="animalbuddies-animals.html">Animals</a>
+        <a href="animalbuddies-habitats.html">Habitats</a>
+        <a href="animalbuddies-quiz.html">Quiz</a> 
+    </nav>
+</header>
+
+<main class="page">
+    <section class="page-title orange">
+        <div>
+            <p class="tag">👋 HELLO, LITTLE LEARNERS!</p>
+            <h1>About Animal Buddies</h1>
+            <p>A simple and colourful learning website made for young children.</p>
+        </div>
+        <div class="big-emoji">🐼</div>
+    </section>
+
+    <section class="content-card">
+        <h2>Our Purpose 🎓</h2>
+        <p>Animal Buddies is a web-based tutorial that helps children learn simple information about animals. The website uses colourful designs, simple words, pictures using emojis, interactive buttons and a quiz to make learning more enjoyable.</p>
+
+        <div class="card-grid two">
+            <div class="mini-card">
+                <h3>👦 Target Users</h3>
+                <p>Children around 5 to 6 years old who are beginning to learn about animals.</p>
+            </div>
+            <div class="mini-card">
+                <h3>📚 Learning Style</h3>
+                <p>Children can read, click, explore and answer questions while learning.</p>
+            </div>
+        </div>
+
+        <button class="big-button green-button" onclick="showWelcome()">Click for a Welcome Message 🌟</button>
+        <div id="welcomeMessage" class="message"></div>
+    </section>
+
+    <section class="section">
+        <h2>What Makes It Fun? 🎨</h2>
+        <div class="card-grid three">
+            <article class="card yellow"><div class="icon">🌈</div><h3>Bold Colours</h3><p>Bright colours help make the website attractive and friendly.</p></article>
+            <article class="card green"><div class="icon">🖱️</div><h3>Interaction</h3><p>Buttons allow children to interact with learning content.</p></article>
+            <article class="card pink"><div class="icon">🏆</div><h3>Quiz</h3><p>Children can test what they have learned with a simple quiz.</p></article>
+        </div>
+    </section>
+<div class="sound-area"><button class="sound-button" onclick="playSound('welcome')">🔊 Play Sound</button></div></main>
+
+<footer><p>🐾 Animal Buddies | Learning is an adventure! 🚀</p></footer>
+<script src="animalbuddies.js"></script>
+</body>
+</html>
